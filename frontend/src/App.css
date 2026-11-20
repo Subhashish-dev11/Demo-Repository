@@ -1,0 +1,25 @@
+#root { min-height: 100vh; }
+.blog-container { width: min(920px, calc(100% - 32px)); margin: 0 auto; padding: 48px 0 80px; }
+.page-header { margin-bottom: 28px; }
+.eyebrow { color: #64748b; font-size: .75rem; font-weight: 700; letter-spacing: .14em; margin: 0 0 8px; }
+h1 { font-size: clamp(2.2rem, 6vw, 3.5rem); letter-spacing: -.055em; margin: 0; }
+.subtitle { color: #64748b; margin-top: 8px; }
+.panel, .post-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; box-shadow: 0 8px 30px rgba(15, 23, 42, .04); }
+.create-panel { padding: 24px; }
+h2 { margin: 0 0 18px; font-size: 1.25rem; }
+.post-form { display: grid; gap: 14px; }
+.post-form label, .filter-control, .sorting-controls label { display: grid; gap: 7px; color: #334155; font-size: .9rem; font-weight: 600; }
+input, textarea, select { width: 100%; border: 1px solid #cbd5e1; border-radius: 9px; padding: 11px 12px; background: #fff; color: #0f172a; font: inherit; font-weight: 400; outline: none; }
+input:focus, textarea:focus, select:focus { border-color: #64748b; box-shadow: 0 0 0 3px rgba(100, 116, 139, .14); }
+textarea { resize: vertical; }
+button { border: 0; border-radius: 9px; padding: 10px 16px; background: #0f172a; color: #fff; font: inherit; font-weight: 650; cursor: pointer; }
+button:disabled { opacity: .55; cursor: not-allowed; }
+button.secondary { background: #f1f5f9; color: #334155; }
+button.danger { background: #fff1f2; color: #be123c; }
+.form-footer, .actions { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
+.success { color: #15803d; font-size: .9rem; }.error { color: #b91c1c; font-size: .9rem; }
+.toolbar { display: grid; grid-template-columns: 1fr 1fr 2fr; gap: 14px; align-items: end; padding: 24px 0; border-bottom: 1px solid #e2e8f0; }
+.sorting-controls { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.posts-section { padding-top: 26px; }.section-heading { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }.section-heading h2 { margin: 0; }.section-heading span, .post-topline time { color: #64748b; font-size: .82rem; }
+.post-list { display: grid; gap: 14px; }.post-card { padding: 22px; }.post-topline { display: flex; justify-content: space-between; gap: 12px; }.post-author { color: #475569; font-size: .88rem; font-weight: 650; }.post-card h3 { font-size: 1.35rem; margin: 10px 0; }.post-content { color: #475569; white-space: pre-wrap; line-height: 1.7; }.tags { display: flex; flex-wrap: wrap; gap: 7px; margin: 14px 0; }.tag { background: #f1f5f9; border-radius: 99px; padding: 4px 10px; color: #475569; font-size: .78rem; }.post-card .actions { margin-top: 16px; }.empty-state, .status { color: #64748b; padding: 20px 0; }
+@media (max-width: 680px) { .blog-container { padding-top: 28px; }.toolbar { grid-template-columns: 1fr; }.sorting-controls { grid-template-columns: 1fr 1fr; }.create-panel, .post-card { padding: 18px; }.post-topline { flex-direction: column; gap: 4px; } }
